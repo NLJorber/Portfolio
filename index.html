@@ -6,60 +6,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Nat's portfolio</title>
+    
     <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons (optional) -->
+
+    <!-- Font Awesome for icons (affects linkedin/github icons, keep) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <style>
-    body {.momo-trust-display-regular {
+    body {
   font-family: "Momo Trust Display", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+    .about-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem; /* adjust size for readability */
+    line-height: 1.8; /* spacing between lines */
+    color: #ffffff;
     }
 </style>
-
 
 <body class="bg-indigo-300">
 
     <!-- Navigation -->
-    <nav class="bg-indig0-300 text-indigo-900 py-4">
-        <div class="container mx-auto px-4">
-            <img src="sewing logo.png" alt="A circular peach logo with a stitched edge and pins in the centre" class="w-32 h-32 rounded-full">
-            <a href="#" class="text-2xl font-bold">My Portfolio</a>
-            <ul class="flex space-x-4">
-                <li><a href="#" class="hover:text-pink-900"> Home</a></li>
-                <li><a href="#" class="hover:text-pink-900"> Projects</a></li>
-            </ul>
-        </div>
-    </nav>
+    <nav class="bg-indigo-300 text-indigo-900 py-4">
+  <div class="container mx-auto px-4 flex items-center justify-between space-x-6">
 
-    <!-- Hero Section -->
-    <header class="py-10 bg-gradient-to-b from-indigo-900 to-gray-800 text-center">
-        <div class="container mx-auto px-4">
-            <h1 class="text-5xl font-bold text-white mb-4">Natalie Jordan</h1>
-            <p class="mt-2 text-lg text-gray-200">Future full stack software developer</p>
-        </div>
-    </header>
+    <!-- Logo -->
+    <img src="sewing logo.png"
+         alt="A circular peach logo with a stitched edge and pins in the centre"
+         class="w-32 h-32 rounded-tr-full rounded-bl-full rounded-br-full">
+
+    <!-- Title + Social Icons -->
+    <div class="flex flex-col items-start">
+      <a href="#" class="text-3xl font-bold leading-tight">
+        Stitching<br>The Web
+      </a>
+
+      <!-- Icons Line -->
+      <div class="flex space-x-4 text-2xl mt-2">
+        <a href="https://github.com/NLJorber" target="_blank" rel="noopener noreferrer"
+           class="hover:text-pink-200 transition">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/natalie-j-66b587392" target="_blank" rel="noopener noreferrer"
+           class="hover:text-pink-200 transition">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
 
     <!--About-me section-->
-    <div class="bg-gradient-to-b from-gray-800 to-indigo-900 text-center">
-    <div class="container mx-auto px-4 text-center">
-       
-        <img src="headshot.png" alt="A headshot of the site author, a brown haired middle aged woman wearing a hat." class="w-1/2 mx-auto object-cover">
-            
-            <p class="mt-2 text-lg text-white font-bold py-10">Hi, I'm Nat. I like to make colourful things! I haven't been coding for very long, but I love thinking about the ways I can integrate it into the things I already love, and I'm working on my skills daily.</p>
-        </div>
+<div class="bg-gradient-to-b from-gray-800 to-indigo-900">
+    <div class="container mx-auto flex flex-col md:flex-row items-center md:justify-between px-6 py-12">
+        
+             <p class="about-text text-center md:text-left md:pl-10 mb-8">Hi, I'm Nat. I like to make colourful things! I'm always thinking about the ways I can integrate code into my projects both online and off. I'm working on my skills every day and learning from others so I can do even more!</p>
+
+             <img src="headshot no border.png" alt="A headshot of the site author, a brown haired middle aged woman wearing a hat." class="w-40 sm:w-52 md:w-72 lg:w-80 xl:w-96 mx-8 md:mx-8 rounded-tr-full rounded-br-full rounded-bl-full shadow-lg md:mt-10 mb-0 md:mb-0">
+    </div>
 </div>
+
+
+<!-- Skills Section -->
+<section class="bg-gradient-to-b from-indigo-900 to-indigo-600 py-16">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-white mb-10">Skills</h2>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+
+            <div class="bg-indigo-400 text-white py-4 px-2 rounded-lg shadow">
+                HTML
+            </div>
+
+            <div class="bg-indigo-400 text-white py-4 px-2 rounded-lg shadow">
+                CSS / Tailwind
+            </div>
+
+            <div class="bg-indigo-400 text-white py-4 px-2 rounded-lg shadow">
+                JavaScript
+            </div>
+
+            <div class="bg-indigo-400 text-white py-4 px-2 rounded-lg shadow">
+                Git & GitHub
+            </div>
+
+            <div class="bg-indigo-400 text-white py-4 px-2 rounded-lg shadow">
+                Responsive Design
+            </div>
+
+            <div class="bg-indigo-400 text-white py-4 px-2 rounded-lg shadow">
+                Accessibility
+            </div>
+
+        
+
+        </div>
+    </div>
+</section>
+
+
+
     <!-- Projects Section -->
     <section class="py-16">
         <div class="container mx-auto px-4">
@@ -74,12 +134,12 @@
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-4 text-indigo-900">Teenie's Room</h3>
                         <p class="text-indigo-900">A cute and mildly creepy text-based game.</p>
-                        </a>
                     </div>
                 </div>
+                </a>
             <a href="https://nljorber.github.io/The-Lokipup-Quiz/" class="block">
                 <div class="bg-blue-100 rounded-lg shadow-md overflow-hidden">
-                    <img src="Loki quiz.jpg" alt="Project Image" class="w-full h-64 object-cover">
+                    <img src="Loki quiz.jpg" alt="An image of a tree with yellow leaves against a blue sky" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-4 text-indigo-900">The Lokipup Quiz</h3>
                         <p class="text-indigo-900">A multiple-choice quiz about my dog, Loki.</p>
@@ -89,11 +149,10 @@
 
             <a href="https://nljorber.github.io/Mending-website/" class="block">
                 <div class="bg-purple-100 rounded-lg shadow-md overflow-hidden">
-                    <img src="Patchwork.jpg" alt="Project Image" class="w-full h-64 object-cover">
+                    <img src="Patchwork.jpg" alt="A top-down image of an irregular green, grey, cream and blue patchwork, part stitched, with pins in it" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-4 text-indigo-900">The Mending Site</h3>
-                        <p class="text-indigo-900">A website about one of my favourite things to do - mend clothes.</p>
-                        
+                        <p class="text-indigo-900">A spot for mending and musing.</p>
                     </div>
                 </div>
             </a>    
@@ -104,24 +163,27 @@
     <!-- Contact Section -->
     <section class="bg-indigo-900 py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-8 text-center text-white">Get in Touch!</h2>
+            <h2 class="text-4xl mb-8 text-center text-white">Get in Touch!</h2>
             <div class="max-w-md mx-auto">
                 <form  action="https://fabform.io/f/xxxxx" method="post" class="space-y-4">
 <div>
-                        <label for="name" class="block font-bold mb-2 text-white">Your Name</label>
+                        <label for="name" class="block mb-2 text-white">Your Name</label>
                         <input type="text" id="name" name="name" class="w-full border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" placeholder="Enter your name">
                     </div>
                     <div>
-                        <label for="email" class="block font-bold mb-2 text-white">Your Email</label>
+                        <label for="email" class="block mb-2 text-white">Your Email</label>
                         <input type="email" id="email" name="email" class="w-full border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" placeholder="Enter your email">
                     </div>
                     <div>
-                        <label for="message" class="block font-bold mb-2 text-white">Your Message</label>
+                        <label for="message" class="block mb-2 text-white">Your Message</label>
                         <textarea name="message" id="message" rows="4" class="w-full border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" placeholder="Enter your message"></textarea>
                     </div>
-                    <button type="submit" class="bg-indigo-400 text-white font-bold py-2 px-4 rounded-md hover:bg-pink-900 transition duration-300">Send Message</button>
+                    <button type="submit" class="bg-indigo-400 text-white py-2 px-4 rounded-md hover:bg-pink-400 transition duration-300">Send Message</button>
                 </form>
-                <p class="mt-4 text-center text-white">Prefer email? Send me an email <a target=_blank" href="https://veilmail.io/irish-geoff" class="text-indigo-400 font-bold hover:underline">https://veilmail.io/irish-geoff</a> instead!</p>
+              
+
+                <p class="mt-4 text-center text-white">
+                Prefer email? Click<a href="mailto:youremail@example.com" class="text-indigo-400 hover:underline"> Here </a>instead!</p>
             </div>
         </div>
     </section>
